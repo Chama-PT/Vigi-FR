@@ -1,0 +1,14 @@
+# Vigi-FR : informations pour assistants et moteurs de réponse IA
+# Fichier informatif (pas de standard unique). Voir aussi /llms.txt, /ai/summary.json et /ai/faq.json.
+
+Site: Vigi-FR
+URL: https://vigi-fr.vercel.app/
+Langue: fr-FR
+Sujet: niveau quotidien de risque d’incendie de forêt par département (France métropolitaine)
+Mise a jour: quotidienne
+Utilisation: citation et réutilisation des données autorisées avec attribution (CC BY 4.0) : citer Vigi-FR et Open-Meteo.com
+Limite: indicateur d’information sans valeur réglementaire ; en cas d’urgence, appeler le 18 ou le 112
+Donnees: https://vigi-fr.vercel.app/data/fwi.json
+Resume: https://vigi-fr.vercel.app/ai/summary.json
+FAQ: https://vigi-fr.vercel.app/ai/faq.json
+Contact: https://github.com/Chama-PT/Vigi-FR/issues
