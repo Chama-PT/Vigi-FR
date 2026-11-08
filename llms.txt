@@ -1,0 +1,144 @@
+# Vigi-FR
+
+> Site indépendant et open source qui publie, pour les 96 départements de France métropolitaine, le niveau de risque d’incendie de forêt (de 1 à 4) calculé chaque jour avec l’indice forêt-météo (FWI) à partir de prévisions Open-Meteo. Ce n’est pas un bulletin officiel : les arrêtés préfectoraux et les consignes des autorités font foi. En cas d’urgence : 18 ou 112.
+
+Points utiles pour citer ou résumer le site :
+- Chaque niveau est calculé au chef-lieu du département (pas sur tout son territoire), à midi heure de Paris, et recalculé chaque jour de l’année. La date du dernier calcul est affichée sur chaque page.
+- Les seuils (FWI 11,2 ; 21,3 ; 38) sont ceux des classes EFFIS, regroupées en quatre niveaux. Les niveaux de Vigi-FR peuvent différer de la Météo des forêts de Météo-France.
+- Données sous licence CC BY 4.0 : citer Vigi-FR et Open-Meteo.com.
+
+## Pages principales
+- [Accueil : carte nationale des niveaux](https://vigi-fr.vercel.app/): niveau du jour pour chaque département, carte, tableau, questions fréquentes.
+- [Méthodologie](https://vigi-fr.vercel.app/methodologie/): données d’entrée, calcul du FWI, niveaux, limites.
+- [Données ouvertes](https://vigi-fr.vercel.app/donnees/): description du fichier JSON, champs, licence, citation.
+- [À propos](https://vigi-fr.vercel.app/a-propos/): ce que fait le site, sources, licences, vie privée, corrections.
+- [Politique de confidentialité](https://vigi-fr.vercel.app/politique-de-confidentialite/): aucune donnée personnelle collectée, hébergement, liens sortants.
+- [Conditions d’utilisation](https://vigi-fr.vercel.app/conditions-d-utilisation/): usage libre, information sans valeur réglementaire, licences.
+- [Flux Atom](https://vigi-fr.vercel.app/feed.xml): situation nationale du dernier calcul et guides.
+
+## Guides
+- [Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites](https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/): Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.
+- [Météo des forêts, Vigi-FR, arrêtés préfectoraux : qui dit quoi ?](https://vigi-fr.vercel.app/guide/comparer-sources-risque-incendie/): Ce que mesurent la Météo des forêts de Météo-France, les niveaux Vigi-FR et les arrêtés préfectoraux, leurs différences et la source qui fait foi.
+- [Débroussaillement obligatoire : qui, où, quand, quelles sanctions](https://vigi-fr.vercel.app/guide/debroussaillement-obligatoire/): Obligations légales de débroussaillement (OLD) : qui est concerné, sur quelle surface, à quelle période, quelles sanctions et comment vérifier sa situation.
+
+## Régions
+- [Risque d’incendie de forêt en Auvergne-Rhône-Alpes](https://vigi-fr.vercel.app/region/auvergne-rhone-alpes/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Bourgogne-Franche-Comté](https://vigi-fr.vercel.app/region/bourgogne-franche-comte/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Bretagne](https://vigi-fr.vercel.app/region/bretagne/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Centre-Val de Loire](https://vigi-fr.vercel.app/region/centre-val-de-loire/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Corse](https://vigi-fr.vercel.app/region/corse/): niveaux des départements de la région.
+- [Risque d’incendie de forêt dans le Grand Est](https://vigi-fr.vercel.app/region/grand-est/): niveaux des départements de la région.
+- [Risque d’incendie de forêt dans les Hauts-de-France](https://vigi-fr.vercel.app/region/hauts-de-france/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Île-de-France](https://vigi-fr.vercel.app/region/ile-de-france/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Normandie](https://vigi-fr.vercel.app/region/normandie/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Nouvelle-Aquitaine](https://vigi-fr.vercel.app/region/nouvelle-aquitaine/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Occitanie](https://vigi-fr.vercel.app/region/occitanie/): niveaux des départements de la région.
+- [Risque d’incendie de forêt dans les Pays de la Loire](https://vigi-fr.vercel.app/region/pays-de-la-loire/): niveaux des départements de la région.
+- [Risque d’incendie de forêt en Provence-Alpes-Côte d’Azur](https://vigi-fr.vercel.app/region/provence-alpes-cote-d-azur/): niveaux des départements de la région.
+
+## Fichiers pour assistants IA
+- [Résumé du site (JSON)](https://vigi-fr.vercel.app/ai/summary.json): description, niveaux, seuils, limites, licence, points d’accès.
+- [Questions fréquentes (JSON)](https://vigi-fr.vercel.app/ai/faq.json): les réponses de la FAQ de l’accueil.
+- [Informations IA (texte)](https://vigi-fr.vercel.app/.well-known/ai.txt): usage autorisé et liens utiles.
+
+## Données
+- [Dernier calcul (JSON)](https://vigi-fr.vercel.app/data/fwi.json): niveaux et indices FWI de tous les départements.
+- [Référentiel des départements (JSON)](https://vigi-fr.vercel.app/assets/data/departements.json): code, nom, région, préfecture.
+
+## Optional
+- [Ain (01)](https://vigi-fr.vercel.app/departement/ain-01/): risque d’incendie de forêt dans l’Ain.
+- [Aisne (02)](https://vigi-fr.vercel.app/departement/aisne-02/): risque d’incendie de forêt dans l’Aisne.
+- [Allier (03)](https://vigi-fr.vercel.app/departement/allier-03/): risque d’incendie de forêt dans l’Allier.
+- [Alpes-de-Haute-Provence (04)](https://vigi-fr.vercel.app/departement/alpes-de-haute-provence-04/): risque d’incendie de forêt dans les Alpes-de-Haute-Provence.
+- [Hautes-Alpes (05)](https://vigi-fr.vercel.app/departement/hautes-alpes-05/): risque d’incendie de forêt dans les Hautes-Alpes.
+- [Alpes-Maritimes (06)](https://vigi-fr.vercel.app/departement/alpes-maritimes-06/): risque d’incendie de forêt dans les Alpes-Maritimes.
+- [Ardèche (07)](https://vigi-fr.vercel.app/departement/ardeche-07/): risque d’incendie de forêt en Ardèche.
+- [Ardennes (08)](https://vigi-fr.vercel.app/departement/ardennes-08/): risque d’incendie de forêt dans les Ardennes.
+- [Ariège (09)](https://vigi-fr.vercel.app/departement/ariege-09/): risque d’incendie de forêt en Ariège.
+- [Aube (10)](https://vigi-fr.vercel.app/departement/aube-10/): risque d’incendie de forêt dans l’Aube.
+- [Aude (11)](https://vigi-fr.vercel.app/departement/aude-11/): risque d’incendie de forêt dans l’Aude.
+- [Aveyron (12)](https://vigi-fr.vercel.app/departement/aveyron-12/): risque d’incendie de forêt dans l’Aveyron.
+- [Bouches-du-Rhône (13)](https://vigi-fr.vercel.app/departement/bouches-du-rhone-13/): risque d’incendie de forêt dans les Bouches-du-Rhône.
+- [Calvados (14)](https://vigi-fr.vercel.app/departement/calvados-14/): risque d’incendie de forêt dans le Calvados.
+- [Cantal (15)](https://vigi-fr.vercel.app/departement/cantal-15/): risque d’incendie de forêt dans le Cantal.
+- [Charente (16)](https://vigi-fr.vercel.app/departement/charente-16/): risque d’incendie de forêt en Charente.
+- [Charente-Maritime (17)](https://vigi-fr.vercel.app/departement/charente-maritime-17/): risque d’incendie de forêt en Charente-Maritime.
+- [Cher (18)](https://vigi-fr.vercel.app/departement/cher-18/): risque d’incendie de forêt dans le Cher.
+- [Corrèze (19)](https://vigi-fr.vercel.app/departement/correze-19/): risque d’incendie de forêt en Corrèze.
+- [Corse-du-Sud (2A)](https://vigi-fr.vercel.app/departement/corse-du-sud-2a/): risque d’incendie de forêt en Corse-du-Sud.
+- [Haute-Corse (2B)](https://vigi-fr.vercel.app/departement/haute-corse-2b/): risque d’incendie de forêt en Haute-Corse.
+- [Côte-d'Or (21)](https://vigi-fr.vercel.app/departement/cote-d-or-21/): risque d’incendie de forêt en Côte-d’Or.
+- [Côtes-d'Armor (22)](https://vigi-fr.vercel.app/departement/cotes-d-armor-22/): risque d’incendie de forêt dans les Côtes-d’Armor.
+- [Creuse (23)](https://vigi-fr.vercel.app/departement/creuse-23/): risque d’incendie de forêt dans la Creuse.
+- [Dordogne (24)](https://vigi-fr.vercel.app/departement/dordogne-24/): risque d’incendie de forêt en Dordogne.
+- [Doubs (25)](https://vigi-fr.vercel.app/departement/doubs-25/): risque d’incendie de forêt dans le Doubs.
+- [Drôme (26)](https://vigi-fr.vercel.app/departement/drome-26/): risque d’incendie de forêt dans la Drôme.
+- [Eure (27)](https://vigi-fr.vercel.app/departement/eure-27/): risque d’incendie de forêt dans l’Eure.
+- [Eure-et-Loir (28)](https://vigi-fr.vercel.app/departement/eure-et-loir-28/): risque d’incendie de forêt en Eure-et-Loir.
+- [Finistère (29)](https://vigi-fr.vercel.app/departement/finistere-29/): risque d’incendie de forêt dans le Finistère.
+- [Gard (30)](https://vigi-fr.vercel.app/departement/gard-30/): risque d’incendie de forêt dans le Gard.
+- [Haute-Garonne (31)](https://vigi-fr.vercel.app/departement/haute-garonne-31/): risque d’incendie de forêt en Haute-Garonne.
+- [Gers (32)](https://vigi-fr.vercel.app/departement/gers-32/): risque d’incendie de forêt dans le Gers.
+- [Gironde (33)](https://vigi-fr.vercel.app/departement/gironde-33/): risque d’incendie de forêt en Gironde.
+- [Hérault (34)](https://vigi-fr.vercel.app/departement/herault-34/): risque d’incendie de forêt dans l’Hérault.
+- [Ille-et-Vilaine (35)](https://vigi-fr.vercel.app/departement/ille-et-vilaine-35/): risque d’incendie de forêt en Ille-et-Vilaine.
+- [Indre (36)](https://vigi-fr.vercel.app/departement/indre-36/): risque d’incendie de forêt dans l’Indre.
+- [Indre-et-Loire (37)](https://vigi-fr.vercel.app/departement/indre-et-loire-37/): risque d’incendie de forêt en Indre-et-Loire.
+- [Isère (38)](https://vigi-fr.vercel.app/departement/isere-38/): risque d’incendie de forêt en Isère.
+- [Jura (39)](https://vigi-fr.vercel.app/departement/jura-39/): risque d’incendie de forêt dans le Jura.
+- [Landes (40)](https://vigi-fr.vercel.app/departement/landes-40/): risque d’incendie de forêt dans les Landes.
+- [Loir-et-Cher (41)](https://vigi-fr.vercel.app/departement/loir-et-cher-41/): risque d’incendie de forêt dans le Loir-et-Cher.
+- [Loire (42)](https://vigi-fr.vercel.app/departement/loire-42/): risque d’incendie de forêt dans la Loire.
+- [Haute-Loire (43)](https://vigi-fr.vercel.app/departement/haute-loire-43/): risque d’incendie de forêt en Haute-Loire.
+- [Loire-Atlantique (44)](https://vigi-fr.vercel.app/departement/loire-atlantique-44/): risque d’incendie de forêt en Loire-Atlantique.
+- [Loiret (45)](https://vigi-fr.vercel.app/departement/loiret-45/): risque d’incendie de forêt dans le Loiret.
+- [Lot (46)](https://vigi-fr.vercel.app/departement/lot-46/): risque d’incendie de forêt dans le Lot.
+- [Lot-et-Garonne (47)](https://vigi-fr.vercel.app/departement/lot-et-garonne-47/): risque d’incendie de forêt dans le Lot-et-Garonne.
+- [Lozère (48)](https://vigi-fr.vercel.app/departement/lozere-48/): risque d’incendie de forêt en Lozère.
+- [Maine-et-Loire (49)](https://vigi-fr.vercel.app/departement/maine-et-loire-49/): risque d’incendie de forêt en Maine-et-Loire.
+- [Manche (50)](https://vigi-fr.vercel.app/departement/manche-50/): risque d’incendie de forêt dans la Manche.
+- [Marne (51)](https://vigi-fr.vercel.app/departement/marne-51/): risque d’incendie de forêt dans la Marne.
+- [Haute-Marne (52)](https://vigi-fr.vercel.app/departement/haute-marne-52/): risque d’incendie de forêt en Haute-Marne.
+- [Mayenne (53)](https://vigi-fr.vercel.app/departement/mayenne-53/): risque d’incendie de forêt en Mayenne.
+- [Meurthe-et-Moselle (54)](https://vigi-fr.vercel.app/departement/meurthe-et-moselle-54/): risque d’incendie de forêt en Meurthe-et-Moselle.
+- [Meuse (55)](https://vigi-fr.vercel.app/departement/meuse-55/): risque d’incendie de forêt dans la Meuse.
+- [Morbihan (56)](https://vigi-fr.vercel.app/departement/morbihan-56/): risque d’incendie de forêt dans le Morbihan.
+- [Moselle (57)](https://vigi-fr.vercel.app/departement/moselle-57/): risque d’incendie de forêt en Moselle.
+- [Nièvre (58)](https://vigi-fr.vercel.app/departement/nievre-58/): risque d’incendie de forêt dans la Nièvre.
+- [Nord (59)](https://vigi-fr.vercel.app/departement/nord-59/): risque d’incendie de forêt dans le Nord.
+- [Oise (60)](https://vigi-fr.vercel.app/departement/oise-60/): risque d’incendie de forêt dans l’Oise.
+- [Orne (61)](https://vigi-fr.vercel.app/departement/orne-61/): risque d’incendie de forêt dans l’Orne.
+- [Pas-de-Calais (62)](https://vigi-fr.vercel.app/departement/pas-de-calais-62/): risque d’incendie de forêt dans le Pas-de-Calais.
+- [Puy-de-Dôme (63)](https://vigi-fr.vercel.app/departement/puy-de-dome-63/): risque d’incendie de forêt dans le Puy-de-Dôme.
+- [Pyrénées-Atlantiques (64)](https://vigi-fr.vercel.app/departement/pyrenees-atlantiques-64/): risque d’incendie de forêt dans les Pyrénées-Atlantiques.
+- [Hautes-Pyrénées (65)](https://vigi-fr.vercel.app/departement/hautes-pyrenees-65/): risque d’incendie de forêt dans les Hautes-Pyrénées.
+- [Pyrénées-Orientales (66)](https://vigi-fr.vercel.app/departement/pyrenees-orientales-66/): risque d’incendie de forêt dans les Pyrénées-Orientales.
+- [Bas-Rhin (67)](https://vigi-fr.vercel.app/departement/bas-rhin-67/): risque d’incendie de forêt dans le Bas-Rhin.
+- [Haut-Rhin (68)](https://vigi-fr.vercel.app/departement/haut-rhin-68/): risque d’incendie de forêt dans le Haut-Rhin.
+- [Rhône (69)](https://vigi-fr.vercel.app/departement/rhone-69/): risque d’incendie de forêt dans le Rhône.
+- [Haute-Saône (70)](https://vigi-fr.vercel.app/departement/haute-saone-70/): risque d’incendie de forêt en Haute-Saône.
+- [Saône-et-Loire (71)](https://vigi-fr.vercel.app/departement/saone-et-loire-71/): risque d’incendie de forêt en Saône-et-Loire.
+- [Sarthe (72)](https://vigi-fr.vercel.app/departement/sarthe-72/): risque d’incendie de forêt dans la Sarthe.
+- [Savoie (73)](https://vigi-fr.vercel.app/departement/savoie-73/): risque d’incendie de forêt en Savoie.
+- [Haute-Savoie (74)](https://vigi-fr.vercel.app/departement/haute-savoie-74/): risque d’incendie de forêt en Haute-Savoie.
+- [Paris (75)](https://vigi-fr.vercel.app/departement/paris-75/): risque d’incendie de forêt à Paris.
+- [Seine-Maritime (76)](https://vigi-fr.vercel.app/departement/seine-maritime-76/): risque d’incendie de forêt en Seine-Maritime.
+- [Seine-et-Marne (77)](https://vigi-fr.vercel.app/departement/seine-et-marne-77/): risque d’incendie de forêt en Seine-et-Marne.
+- [Yvelines (78)](https://vigi-fr.vercel.app/departement/yvelines-78/): risque d’incendie de forêt dans les Yvelines.
+- [Deux-Sèvres (79)](https://vigi-fr.vercel.app/departement/deux-sevres-79/): risque d’incendie de forêt dans les Deux-Sèvres.
+- [Somme (80)](https://vigi-fr.vercel.app/departement/somme-80/): risque d’incendie de forêt dans la Somme.
+- [Tarn (81)](https://vigi-fr.vercel.app/departement/tarn-81/): risque d’incendie de forêt dans le Tarn.
+- [Tarn-et-Garonne (82)](https://vigi-fr.vercel.app/departement/tarn-et-garonne-82/): risque d’incendie de forêt dans le Tarn-et-Garonne.
+- [Var (83)](https://vigi-fr.vercel.app/departement/var-83/): risque d’incendie de forêt dans le Var.
+- [Vaucluse (84)](https://vigi-fr.vercel.app/departement/vaucluse-84/): risque d’incendie de forêt dans le Vaucluse.
+- [Vendée (85)](https://vigi-fr.vercel.app/departement/vendee-85/): risque d’incendie de forêt en Vendée.
+- [Vienne (86)](https://vigi-fr.vercel.app/departement/vienne-86/): risque d’incendie de forêt dans la Vienne.
+- [Haute-Vienne (87)](https://vigi-fr.vercel.app/departement/haute-vienne-87/): risque d’incendie de forêt en Haute-Vienne.
+- [Vosges (88)](https://vigi-fr.vercel.app/departement/vosges-88/): risque d’incendie de forêt dans les Vosges.
+- [Yonne (89)](https://vigi-fr.vercel.app/departement/yonne-89/): risque d’incendie de forêt dans l’Yonne.
+- [Territoire de Belfort (90)](https://vigi-fr.vercel.app/departement/territoire-de-belfort-90/): risque d’incendie de forêt dans le Territoire de Belfort.
+- [Essonne (91)](https://vigi-fr.vercel.app/departement/essonne-91/): risque d’incendie de forêt dans l’Essonne.
+- [Hauts-de-Seine (92)](https://vigi-fr.vercel.app/departement/hauts-de-seine-92/): risque d’incendie de forêt dans les Hauts-de-Seine.
+- [Seine-Saint-Denis (93)](https://vigi-fr.vercel.app/departement/seine-saint-denis-93/): risque d’incendie de forêt en Seine-Saint-Denis.
+- [Val-de-Marne (94)](https://vigi-fr.vercel.app/departement/val-de-marne-94/): risque d’incendie de forêt dans le Val-de-Marne.
+- [Val-d'Oise (95)](https://vigi-fr.vercel.app/departement/val-d-oise-95/): risque d’incendie de forêt dans le Val-d’Oise.

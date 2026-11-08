@@ -1,0 +1,88 @@
+{
+  "name": "Vigi-FR",
+  "url": "https://vigi-fr.vercel.app/",
+  "language": "fr-FR",
+  "description": "Risque incendie de forêt dans les 96 départements de France métropolitaine : niveau de 1 à 4, recalculé chaque jour avec l’indice forêt-météo (FWI).",
+  "topic": "Niveau quotidien de risque d’incendie de forêt par département, France métropolitaine",
+  "dateModified": "2026-11-04T12:50:17Z",
+  "coverage": {
+    "departments": 96,
+    "regions": 13
+  },
+  "update": "Recalculé chaque jour de l’année, à midi heure de Paris, au chef-lieu de chaque département",
+  "method": "Indice forêt-météo canadien (FWI) calculé à partir de prévisions Open-Meteo",
+  "levels": [
+    {
+      "level": 1,
+      "label": "Faible",
+      "fwi": "FWI inférieur à 11,2",
+      "meaning": "Conditions peu favorables aux départs de feu de végétation."
+    },
+    {
+      "level": 2,
+      "label": "Modéré",
+      "fwi": "FWI de 11,2 à 21,3",
+      "meaning": "Prudence : un départ de feu reste possible. Respectez les consignes locales."
+    },
+    {
+      "level": 3,
+      "label": "Élevé",
+      "fwi": "FWI de 21,3 à 38",
+      "meaning": "Conditions favorables aux incendies. Évitez tout usage du feu en forêt ou à proximité."
+    },
+    {
+      "level": 4,
+      "label": "Très élevé",
+      "fwi": "FWI de 38 et plus",
+      "meaning": "Risque maximal. Renseignez-vous auprès de la préfecture sur d’éventuelles restrictions d’accès aux massifs."
+    }
+  ],
+  "thresholds": {
+    "fwi": [
+      11.2,
+      21.3,
+      38
+    ],
+    "source": "Classes de danger EFFIS regroupées en quatre niveaux"
+  },
+  "limits": [
+    "Indicateur d’information, sans valeur réglementaire : seuls les arrêtés préfectoraux fixent les restrictions.",
+    "Niveau calculé au chef-lieu du département, pas sur tout son territoire.",
+    "Ne mesure que le danger météorologique, pas la présence d’habitations ni l’état réel des massifs.",
+    "Les niveaux peuvent différer de la Météo des forêts de Météo-France."
+  ],
+  "emergency": "En cas d’urgence, appeler le 18 ou le 112",
+  "license": {
+    "data": "CC BY 4.0",
+    "attribution": "Citer Vigi-FR et Open-Meteo.com",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.fr"
+  },
+  "endpoints": {
+    "data": "https://vigi-fr.vercel.app/data/fwi.json",
+    "departments": "https://vigi-fr.vercel.app/assets/data/departements.json",
+    "faq": "https://vigi-fr.vercel.app/ai/faq.json",
+    "llms": "https://vigi-fr.vercel.app/llms.txt",
+    "sitemap": "https://vigi-fr.vercel.app/sitemap.xml"
+  },
+  "guides": [
+    {
+      "title": "Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites",
+      "url": "https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/",
+      "description": "Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation."
+    },
+    {
+      "title": "Météo des forêts, Vigi-FR, arrêtés préfectoraux : qui dit quoi ?",
+      "url": "https://vigi-fr.vercel.app/guide/comparer-sources-risque-incendie/",
+      "description": "Ce que mesurent la Météo des forêts de Météo-France, les niveaux Vigi-FR et les arrêtés préfectoraux, leurs différences et la source qui fait foi."
+    },
+    {
+      "title": "Débroussaillement obligatoire : qui, où, quand, quelles sanctions",
+      "url": "https://vigi-fr.vercel.app/guide/debroussaillement-obligatoire/",
+      "description": "Obligations légales de débroussaillement (OLD) : qui est concerné, sur quelle surface, à quelle période, quelles sanctions et comment vérifier sa situation."
+    }
+  ],
+  "contact": {
+    "issues": "https://github.com/Chama-PT/Vigi-FR/issues"
+  },
+  "citation": "Vigi-FR, niveau de risque d’incendie de forêt par département, https://vigi-fr.vercel.app/"
+}

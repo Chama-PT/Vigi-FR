@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <title>Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites | Vigi-FR</title>
+  <meta name="description" content="Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/">
+  <link rel="alternate" hreflang="fr-FR" href="https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/">
+  <link rel="alternate" hreflang="x-default" href="https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Vigi-FR">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites | Vigi-FR">
+  <meta property="og:description" content="Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.">
+  <meta property="og:url" content="https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/">
+  <meta property="og:image" content="https://vigi-fr.vercel.app/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vigi-FR : risque d’incendie de forêt par département en France métropolitaine">
+  <meta property="article:published_time" content="2026-11-07">
+  <meta property="article:modified_time" content="2026-11-07">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites | Vigi-FR">
+  <meta name="twitter:description" content="Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.">
+  <meta name="twitter:image" content="https://vigi-fr.vercel.app/assets/img/og-image.png">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="alternate" type="application/atom+xml" title="Vigi-FR : situation quotidienne et guides" href="/feed.xml">
+  <link rel="dns-prefetch" href="//www.ecologie.gouv.fr">
+  <link rel="dns-prefetch" href="//effis.jrc.ec.europa.eu">
+  <link rel="dns-prefetch" href="//vigilance.meteofrance.fr">
+  <link rel="dns-prefetch" href="//open-meteo.com">
+  <link rel="preload" href="/assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="/assets/js/lib.js">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://vigi-fr.vercel.app/#organization","name":"Vigi-FR","url":"https://vigi-fr.vercel.app/","logo":{"@type":"ImageObject","url":"https://vigi-fr.vercel.app/assets/img/icon-512.png","width":512,"height":512},"description":"Site indépendant et open source qui publie le niveau de risque d’incendie de forêt des départements de France métropolitaine, calculé chaque jour avec l’indice forêt-météo.","sameAs":["https://github.com/Chama-PT/Vigi-FR/"]},{"@type":"WebSite","@id":"https://vigi-fr.vercel.app/#website","url":"https://vigi-fr.vercel.app/","name":"Vigi-FR","inLanguage":"fr-FR","description":"Risque d’incendie de forêt par département en France métropolitaine, calculé à partir de prévisions météo (indice FWI).","publisher":{"@id":"https://vigi-fr.vercel.app/#organization"}},{"@type":"WebPage","@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#page","url":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/","name":"Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites | Vigi-FR","description":"Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.","inLanguage":"fr-FR","isPartOf":{"@id":"https://vigi-fr.vercel.app/#website"},"breadcrumb":{"@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#breadcrumb"},"dateModified":"2026-11-07","mainEntity":{"@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#article"}},{"@type":"Article","@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#article","headline":"Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites","description":"Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.","inLanguage":"fr-FR","datePublished":"2026-11-07","dateModified":"2026-11-07","author":{"@id":"https://vigi-fr.vercel.app/#organization"},"publisher":{"@id":"https://vigi-fr.vercel.app/#organization"},"mainEntityOfPage":{"@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#page"},"isPartOf":{"@id":"https://vigi-fr.vercel.app/#website"},"image":["https://vigi-fr.vercel.app/assets/img/og-image.png"],"citation":[{"@type":"CreativeWork","name":"Van Wagner, C.E. (1987), Development and structure of the Canadian Forest Fire Weather Index System, Forestry Technical Report 35, Canadian Forestry Service, Ottawa"},{"@type":"CreativeWork","name":"Copernicus Climate Change Service, indicateurs de danger d’incendie (classes de danger du FWI selon EFFIS)","url":"https://cds.climate.copernicus.eu/datasets/sis-tourism-fire-danger-indicators"},{"@type":"CreativeWork","name":"Copernicus, « European State of the Climate 2022 », chapitre feux de forêt (origine et calibrage du FWI, classes de danger)","url":"https://climate.copernicus.eu/esotc/2022/wildfires"},{"@type":"CreativeWork","name":"EFFIS, système européen d’information sur les feux de forêt","url":"https://effis.jrc.ec.europa.eu/"},{"@type":"CreativeWork","name":"Préfecture de la Lozère, communiqué « Météo des forêts – Incendies » (Météo-France)","url":"https://www.lozere.gouv.fr/index.php/contenu/telechargement/29657/259507/file/CP%20-%20M%C3%A9t%C3%A9o%20des%20For%C3%AAts%20-Incendies.pdf"}]},{"@type":"BreadcrumbList","@id":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://vigi-fr.vercel.app/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://vigi-fr.vercel.app/guide/"},{"@type":"ListItem","position":3,"name":"Indice forêt-météo (FWI)","item":"https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/"}]}]}</script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="module" src="/assets/js/site.js"></script>
+
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true" focusable="false" class="sprite">
+    <symbol id="icon-1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="icon-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="icon-3" viewBox="0 0 24 24"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.5M12 17.2h.01"/></symbol>
+    <symbol id="icon-4" viewBox="0 0 24 24"><path d="M8.2 3h7.6L21 8.2v7.6L15.8 21H8.2L3 15.8V8.2z"/><path d="M12 7.5v5.5M12 16.3h.01"/></symbol>
+    <symbol id="icon-0" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12h7"/></symbol>
+    <symbol id="icon-flame" viewBox="0 0 64 64"><path fill="#E8702A" d="M32 8c2.7 9.5 13.5 14.8 13.5 27a13.5 13.5 0 0 1-27 0c0-5.4 2.7-8.6 5.4-11.3.5 3.2 2.2 5.4 4.3 6.5C27.5 22.2 28 14.8 32 8z"/><path fill="#F7E3B8" d="M32 30c1.3 4.2 6 6.3 6 11.5a6 6 0 0 1-12 0c0-2.6 1.5-4 3-5.4.3 1.5.9 2.5 1.9 3C30.5 36 30.5 33 32 30z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="icon-thermo" viewBox="0 0 24 24"><path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 9v7"/></symbol>
+    <symbol id="icon-drop" viewBox="0 0 24 24"><path d="M12 3.5s6 6.3 6 10.5a6 6 0 0 1-12 0c0-4.2 6-10.5 6-10.5z"/></symbol>
+    <symbol id="icon-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 13h16a3 3 0 1 1-3 3"/><path d="M3 18h7"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+    <symbol id="icon-gauge" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4-5"/><circle cx="12" cy="17" r="1"/></symbol>
+    <symbol id="icon-rain" viewBox="0 0 24 24"><path d="M7 15a4.5 4.5 0 1 1 1.5-8.7A5.5 5.5 0 0 1 19 9a3.5 3.5 0 0 1-1 6H7z"/><path d="m9 18-1 2M13 18l-1 2M17 18l-1 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11.5a7 7 0 1 0-14 0C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24"><path d="M4 20h16M6 20V10l6-5 6 5v10M10 20v-5h4v5"/></symbol>
+    <symbol id="icon-trend-up" viewBox="0 0 24 24"><path d="m4 16 6-6 4 4 6-7M15 7h5v5"/></symbol>
+    <symbol id="icon-trend-down" viewBox="0 0 24 24"><path d="m4 8 6 6 4-4 6 7M15 17h5v-5"/></symbol>
+    <symbol id="icon-trend-flat" viewBox="0 0 24 24"><path d="M4 12h16M15 7l5 5-5 5"/></symbol>
+  </svg>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="Vigi-FR, accueil"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 64 64"><use href="#icon-flame"/></svg><span>Vigi-<em>FR</em></span></a>
+      <nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/#carte">Carte</a><a href="/#departements">Départements</a><a href="/guide/" aria-current="page">Guides</a><a href="/methodologie/">Méthodologie</a><a href="/a-propos/">À propos</a></nav>
+      <button type="button" class="search-trigger" data-open-search aria-haspopup="dialog" aria-label="Rechercher un département"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-search"/></svg><span class="search-trigger__label">Rechercher un département</span><kbd aria-hidden="true">/</kbd></button>
+      <a class="btn btn--primary btn--sm header-cta" href="/#carte">Voir la carte nationale <svg class="icon icon--arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a>
+      <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-menu"/></svg></button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <div class="container">
+        <ul><li><a href="/">Accueil<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li><li><a href="/#carte">Carte<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li><li><a href="/#departements">Départements<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li><li><a href="/guide/" aria-current="page">Guides<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li><li><a href="/methodologie/">Méthodologie<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li><li><a href="/a-propos/">À propos<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a></li></ul>
+        <a class="btn btn--primary" href="/#carte">Voir la carte nationale <svg class="icon icon--arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow"/></svg></a>
+      </div>
+    </div>
+  </header>
+  <main id="contenu">
+    <div class="container">
+      <nav class="crumbs" aria-label="Fil d’Ariane"><ol><li><a href="/">Accueil</a></li><li><a href="/guide/">Guides</a></li><li aria-current="page">Indice forêt-météo (FWI)</li></ol></nav>
+      <article>
+        <div class="page-head">
+          <div class="eyebrow eyebrow--ember">Guide</div>
+          <h1 class="display">L’indice forêt-météo, <em>FWI ou IFM</em></h1>
+          <p class="lead">L’indice forêt-météo résume en un seul nombre les conditions météo qui rendent un feu de végétation plus facile à démarrer et à propager. C’est la référence au Canada et en Europe ; en France, Météo-France l’appelle IFM.</p>
+          <p class="fine-print">Publié le <time datetime="2026-11-07">7 novembre 2026</time>, mis à jour le <time datetime="2026-11-07">7 novembre 2026</time>. Rédaction : Vigi-FR.</p>
+        </div>
+        <div class="stack section">
+          <div class="prose">
+          <h2>Une définition en trois phrases</h2>
+          <p>Le <strong>FWI</strong> (<em>Fire Weather Index</em>) est un indice de <strong>danger météorologique</strong> : il estime à quel point la météo récente et prévue favorise l’éclosion et la propagation d’un feu de végétation. En France, le même indice est désigné par <strong>IFM</strong> (indice forêt-météo) ; les deux sigles renvoient au même système de calcul, d’origine canadienne.</p>
+          <p>Il ne mesure ni la présence d’un feu, ni la quantité de végétation, ni la cause d’un départ de feu. Il répond à une seule question : « les conditions du moment sont-elles favorables aux incendies ? »</p>
+          <p>Les équations actuelles sont décrites par Van Wagner (1987). Le système a été adopté par le système européen d’information sur les feux de forêt (EFFIS) pour évaluer le danger de façon homogène en Europe. Il avait été calibré pour les forêts boréales canadiennes, mais s’est révélé pertinent dans d’autres régions, selon Copernicus.</p>
+
+          <h2>Les six composantes du système</h2>
+          <p>Le FWI est le dernier maillon d’une chaîne de calcul. Trois codes suivent l’humidité de trois couches de combustible, deux indices en tirent la propagation et le combustible disponible, puis le FWI les combine.</p>
+          <div class="table-scroll"><table class="lvtable">
+            <thead><tr><th scope="col">Sigle</th><th scope="col">Ce qu’il représente</th><th scope="col">Rapidité de réaction</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">FFMC</td><td>Humidité des combustibles fins de surface : feuilles et brindilles mortes.</td><td>Quelques heures (constante de temps d’environ deux tiers de jour).</td></tr>
+              <tr><td class="mono">DMC</td><td>Humidité de la couche d’humus, de profondeur moyenne.</td><td>Quelques jours à quelques semaines (environ 12 jours).</td></tr>
+              <tr><td class="mono">DC</td><td>Sécheresse des couches profondes, qui s’installe sur la durée.</td><td>Plusieurs semaines (environ 52 jours).</td></tr>
+              <tr><td class="mono">ISI</td><td>Vitesse de propagation initiale : combine le FFMC et le vent.</td><td>Suit la météo du jour.</td></tr>
+              <tr><td class="mono">BUI</td><td>Quantité de combustible disponible : combine le DMC et le DC.</td><td>Évolue lentement.</td></tr>
+              <tr><td class="mono">FWI</td><td>Intensité potentielle d’un feu : combine l’ISI et le BUI.</td><td>Résultat final, recalculé chaque jour.</td></tr>
+            </tbody>
+          </table></div>
+          <p class="fine-print">Les temps de réaction sont des ordres de grandeur issus des constantes de la méthode canadienne (Van Wagner, 1987).</p>
+
+          <h2>Données d’entrée</h2>
+          <p>Le calcul utilise quatre mesures ou prévisions, prises à midi (heure locale) : la <strong>température</strong>, l’<strong>humidité relative</strong> de l’air, la <strong>vitesse du vent</strong> et la <strong>pluie</strong> des 24 dernières heures. Les codes FFMC, DMC et DC gardent la mémoire des jours précédents : une série de jours secs fait monter l’indice, une pluie importante le fait baisser.</p>
+
+          <h2>Lire la valeur : les classes de danger</h2>
+          <p>EFFIS range les valeurs du FWI en six classes de danger. Vigi-FR en tire quatre niveaux en reprenant les mêmes seuils (11,2 ; 21,3 ; 38) : les deux classes les plus basses forment le niveau 1, les deux plus hautes le niveau 4.</p>
+          <div class="table-scroll"><table class="lvtable">
+            <thead><tr><th scope="col">Classe EFFIS</th><th scope="col">Valeur du FWI</th><th scope="col">Niveau Vigi-FR</th></tr></thead>
+            <tbody>
+              <tr><td>Très faible</td><td class="mono">moins de 5,2</td><td rowspan="2">1 — Faible</td></tr>
+              <tr><td>Faible</td><td class="mono">5,2 à 11,2</td></tr>
+              <tr><td>Modéré</td><td class="mono">11,2 à 21,3</td><td>2 — Modéré</td></tr>
+              <tr><td>Élevé</td><td class="mono">21,3 à 38</td><td>3 — Élevé</td></tr>
+              <tr><td>Très élevé</td><td class="mono">38 à 50</td><td rowspan="2">4 — Très élevé</td></tr>
+              <tr><td>Extrême</td><td class="mono">50 et plus</td></tr>
+            </tbody>
+          </table></div>
+          <p>Les seuils d’EFFIS sont publiés par Copernicus. Ils sont communs à tous les pays européens, ce qui permet de comparer des régions entre elles, mais ils ne sont pas calés sur la végétation de chaque département.</p>
+
+          <h2>Ce que l’indice ne dit pas</h2>
+          <ul>
+            <li><strong>Il ne signale aucun incendie en cours.</strong> Un niveau bas ne garantit pas l’absence de feu, un niveau haut ne signifie pas qu’un feu est en cours.</li>
+            <li><strong>Il ne décrit pas la végétation locale.</strong> La même valeur n’a pas la même signification dans une pinède, une garrigue ou une prairie.</li>
+            <li><strong>Il est calculé en un point.</strong> Pour un département, la valeur d’un point peut différer de celle d’un massif éloigné, d’un littoral ou d’un relief.</li>
+            <li><strong>Il ne remplace pas la réglementation.</strong> Seuls les arrêtés préfectoraux fixent les restrictions d’accès et d’usage du feu. Voir le guide <a href="/guide/comparer-sources-risque-incendie/">Météo des forêts, Vigi-FR, arrêtés préfectoraux</a>.</li>
+          </ul>
+
+          <h2>FWI et IFM : qui l’utilise en France ?</h2>
+          <p>Météo-France évalue chaque jour l’IFM sur le territoire. Selon les communiqués de préfecture qui relaient son dispositif « Météo des forêts », cet indice permet d’estimer le danger météorologique en tenant compte de la probabilité d’éclosion d’un feu et de son potentiel de propagation. Vigi-FR calcule de son côté le FWI selon la méthode canadienne à partir de prévisions Open-Meteo : la démarche est comparable, mais les niveaux ne sont pas ceux de Météo-France. La méthode de Vigi-FR est détaillée sur la page <a href="/methodologie/">Méthodologie</a>.</p>
+
+          <h2>Questions fréquentes</h2>
+          <h3>FWI et IFM, est-ce la même chose ?</h3>
+          <p>Oui : FWI est le sigle anglais (<em>Fire Weather Index</em>), IFM le sigle français (indice forêt-météo). Les deux désignent l’indice du système canadien.</p>
+          <h3>À partir de quelle valeur le danger est-il « élevé » ?</h3>
+          <p>Dans les classes d’EFFIS, le danger est dit élevé de 21,3 à 38, très élevé de 38 à 50 et extrême à partir de 50.</p>
+          <h3>Pourquoi l’indice peut-il rester élevé après un jour de pluie ?</h3>
+          <p>Parce que les couches profondes (DMC, DC) sèchent et se rééquilibrent lentement : une pluie courte humidifie surtout la surface (FFMC).</p>
+          <p>Retrouvez le niveau du jour de chaque département sur <a href="/#carte">la carte nationale</a>.</p>
+          </div>
+          <section class="card" aria-labelledby="t-src">
+            <h2 id="t-src">Sources</h2>
+            <ul class="sources"><li>Van Wagner, C.E. (1987), Development and structure of the Canadian Forest Fire Weather Index System, Forestry Technical Report 35, Canadian Forestry Service, Ottawa</li><li><a href="https://cds.climate.copernicus.eu/datasets/sis-tourism-fire-danger-indicators" rel="noopener noreferrer" target="_blank">Copernicus Climate Change Service, indicateurs de danger d’incendie (classes de danger du FWI selon EFFIS)<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li><li><a href="https://climate.copernicus.eu/esotc/2022/wildfires" rel="noopener noreferrer" target="_blank">Copernicus, « European State of the Climate 2022 », chapitre feux de forêt (origine et calibrage du FWI, classes de danger)<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li><li><a href="https://effis.jrc.ec.europa.eu/" rel="noopener noreferrer" target="_blank">EFFIS, système européen d’information sur les feux de forêt<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li><li><a href="https://www.lozere.gouv.fr/index.php/contenu/telechargement/29657/259507/file/CP%20-%20M%C3%A9t%C3%A9o%20des%20For%C3%AAts%20-Incendies.pdf" rel="noopener noreferrer" target="_blank">Préfecture de la Lozère, communiqué « Météo des forêts – Incendies » (Météo-France)<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li></ul>
+            <p class="fine-print">Ce guide est un résumé pédagogique. Seuls les textes officiels et les arrêtés de votre préfecture font foi. Une erreur ? <a href="https://github.com/Chama-PT/Vigi-FR/issues" rel="noopener noreferrer" target="_blank">Signalez-la sur GitHub<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>.</p>
+          </section>
+          <section aria-labelledby="t-more">
+            <h2 class="h-sm" id="t-more">À lire aussi</h2>
+            <div class="chips"><a href="/guide/comparer-sources-risque-incendie/">Comparer les sources</a><a href="/guide/debroussaillement-obligatoire/">Débroussaillement obligatoire</a><a href="/methodologie/">Méthodologie</a><a href="/#carte">Carte nationale</a></div>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Vigi-FR, accueil"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 64 64"><use href="#icon-flame"/></svg><span>Vigi-<em>FR</em></span></a>
+          <p>Le risque d’incendie de forêt en France métropolitaine, département par département, calculé chaque jour à partir de prévisions météo.</p>
+        </div>
+        <nav aria-labelledby="f-nav"><p class="footer-title" id="f-nav">Navigation</p><ul><li><a href="/">Accueil</a></li><li><a href="/#carte">Carte nationale</a></li><li><a href="/#departements">Départements</a></li><li><a href="/guide/">Guides</a></li><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/a-propos/">À propos</a></li></ul></nav>
+        <nav aria-labelledby="f-sud"><p class="footer-title" id="f-sud">Sud de la France</p><ul><li><a href="/departement/gironde-33/">Gironde (33)</a></li><li><a href="/departement/landes-40/">Landes (40)</a></li><li><a href="/departement/herault-34/">Hérault (34)</a></li><li><a href="/departement/gard-30/">Gard (30)</a></li><li><a href="/departement/var-83/">Var (83)</a></li><li><a href="/departement/bouches-du-rhone-13/">Bouches-du-Rhône (13)</a></li><li><a href="/departement/alpes-maritimes-06/">Alpes-Maritimes (06)</a></li><li><a href="/departement/corse-du-sud-2a/">Corse-du-Sud (2A)</a></li></ul></nav>
+        <div><p class="footer-title">Sources</p><ul>
+          <li><a href="https://open-meteo.com/" rel="noopener noreferrer" target="_blank">Open-Meteo.com<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="https://effis.jrc.ec.europa.eu/" rel="noopener noreferrer" target="_blank">EFFIS<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="https://vigilance.meteofrance.fr/" rel="noopener noreferrer" target="_blank">Vigilance Météo-France<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="/donnees/">Données ouvertes (JSON)</a></li>
+        </ul></div>
+        <div><p class="footer-title">Mentions</p><ul>
+          <li><a href="https://creativecommons.org/licenses/by/4.0/deed.fr" rel="noopener noreferrer" target="_blank">Licence CC BY 4.0<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="/a-propos/">À propos et indépendance</a></li>
+          <li><a href="/politique-de-confidentialite/">Politique de confidentialité</a></li>
+          <li><a href="/conditions-d-utilisation/">Conditions d’utilisation</a></li>
+          <li><a href="/a-propos/#contact">Contact et signalements</a></li>
+          <li><a href="/methodologie/">Limites de la méthode</a></li>
+          <li><a href="https://github.com/Chama-PT/Vigi-FR/" rel="noopener noreferrer" target="_blank">Code source sur GitHub<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/Chama-PT/Vigi-FR/issues" rel="noopener noreferrer" target="_blank">Signaler une erreur<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p><strong>Données météo : Open-Meteo.com.</strong> Prévisions utilisées pour calculer l’indice FWI, sous <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" rel="noopener noreferrer" target="_blank">licence CC BY 4.0<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>. Le niveau de risque est un calcul de Vigi-FR, non un bulletin officiel.</p>
+        <p>Dernier calcul : <span data-update><time datetime="2026-11-04T12:50:17Z">4 novembre 2026 à 13 h 50</time></span>. Site indépendant, non affilié à Open-Meteo ni à Météo-France. En cas d’urgence : 18 ou 112.</p>
+        <p>Contours des départements : IGN (Admin Express), version simplifiée par Grégoire David, sous Licence ouverte. Polices Instrument Serif et Geist, sous licence SIL Open Font.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

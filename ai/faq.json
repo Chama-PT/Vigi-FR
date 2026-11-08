@@ -1,0 +1,52 @@
+{
+  "name": "Vigi-FR : questions fréquentes",
+  "url": "https://vigi-fr.vercel.app/",
+  "language": "fr-FR",
+  "dateModified": "2026-11-04T12:50:17Z",
+  "questions": [
+    {
+      "question": "Que signifie le niveau affiché ?",
+      "answer": "Vigi-FR affiche, pour chaque département, un niveau de risque d’incendie de forêt pour les prochains jours. Ce niveau repose sur l’indice forêt-météo canadien (FWI), calculé à partir des prévisions météorologiques au chef-lieu du département."
+    },
+    {
+      "question": "Comment lire les quatre niveaux de risque ?",
+      "answer": "L’échelle comporte quatre niveaux. Le 1 (Faible) correspond à un FWI inférieur à 11,2 ; le 2 (Modéré) va de 11,2 à 21,3. Le 3 (Élevé) va de 21,3 à 38 ; le 4 (Très élevé) commence à 38. Ainsi, plus le niveau est haut, plus les conditions favorisent le départ et la propagation d’un feu de végétation. Ces seuils (11,2 ; 21,3 ; 38) viennent des classes de danger du système européen EFFIS, qui en compte six. Vigi-FR regroupe donc les deux classes les plus basses (niveau 1) et les deux plus hautes (niveau 4)."
+    },
+    {
+      "question": "D’où viennent les données et comment sont-elles calculées ?",
+      "answer": "Les prévisions météorologiques viennent d’Open-Meteo.com, sous licence CC BY 4.0. Chaque jour, Vigi-FR en tire l’indice FWI de chaque département. Ce niveau est un calcul du site. Il ne s’agit ni d’un bulletin officiel de Météo-France ni d’une consigne des autorités. Aucune donnée personnelle n’est collectée. Le détail du calcul est décrit sur la page Méthodologie."
+    },
+    {
+      "question": "À quelle fréquence les données sont-elles mises à jour ?",
+      "answer": "Le calcul est refait chaque jour, tôt le matin (heure de Paris), toute l’année. Ainsi, les niveaux restent à jour. La date et l’heure du dernier calcul figurent en haut de la page d’accueil et dans le pied de page. Si ce calcul date de plusieurs jours, le site vous le signale."
+    },
+    {
+      "question": "Le site fonctionne-t-il toute l’année ?",
+      "answer": "Oui. Le calcul est refait chaque jour, en toute saison. Hors été, les niveaux sont souvent bas. Cependant, un épisode chaud, sec et venteux peut les faire monter à tout moment de l’année."
+    },
+    {
+      "question": "Que faire quand le risque est élevé ou très élevé ?",
+      "answer": "Évitez tout feu, barbecue ou point chaud en forêt et près de la végétation sèche. Ne jetez jamais de mégot et ne stationnez pas sur l’herbe sèche. Renseignez-vous sur les arrêtés de votre préfecture, qui peuvent limiter l’accès aux massifs. En cas de départ de feu, appelez le 18 ou le 112. Pour la vigilance météorologique officielle, consultez vigilance.meteofrance.fr."
+    },
+    {
+      "question": "Pourquoi un seul point de calcul par département ?",
+      "answer": "Le calcul est fait au chef-lieu de chaque département. Un massif éloigné du chef-lieu peut donc avoir un niveau réel différent de celui affiché. C’est aussi le cas d’un département contrasté, par exemple avec un littoral et un relief."
+    },
+    {
+      "question": "Qu’est-ce que l’indice forêt-météo (FWI ou IFM) ?",
+      "answer": "C’est un indice de danger météorologique d’origine canadienne. Il estime dans quelle mesure la météo favorise l’éclosion d’un feu de végétation, puis sa propagation. Il tient compte de la température, de l’humidité de l’air, du vent et de la pluie récente. FWI est le sigle anglais, IFM le sigle utilisé en France. Il ne signale aucun incendie en cours. Le guide Indice forêt-météo : définition, niveaux, limites détaille ses composantes."
+    },
+    {
+      "question": "Quelle différence avec la Météo des forêts de Météo-France ?",
+      "answer": "La Météo des forêts est la carte officielle de danger de feux de Météo-France, en quatre couleurs par département. Vigi-FR est un calcul indépendant du FWI au chef-lieu, avec des seuils fixes. Par conséquent, les niveaux peuvent différer. Ni l’un ni l’autre n’a de valeur réglementaire. Voir Météo des forêts, Vigi-FR, arrêtés préfectoraux : qui dit quoi ?"
+    },
+    {
+      "question": "Peut-on réutiliser les données de Vigi-FR ?",
+      "answer": "Oui. Le dernier calcul est publié au format JSON, avec ses champs documentés, sous licence CC BY 4.0. Il suffit donc de citer Vigi-FR et Open-Meteo.com. Voir la page Données ouvertes."
+    },
+    {
+      "question": "Vigi-FR remplace-t-il les arrêtés préfectoraux ?",
+      "answer": "Non. Vigi-FR est un outil d’information. Seuls les arrêtés des préfectures et les consignes des autorités font foi. Cela vaut pour les restrictions d’accès aux massifs et d’usage du feu."
+    }
+  ]
+}

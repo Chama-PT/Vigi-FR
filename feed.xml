@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+  <id>https://vigi-fr.vercel.app/</id>
+  <title>Vigi-FR : risque incendie de forêt par département</title>
+  <subtitle>Situation nationale du dernier calcul et guides pédagogiques. Indicateur d’information, sans valeur réglementaire.</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://vigi-fr.vercel.app/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/"/>
+  <updated>2026-11-04T12:50:17Z</updated>
+  <author><name>Vigi-FR</name><uri>https://vigi-fr.vercel.app/</uri></author>
+  <rights>Données sous licence CC BY 4.0 : citer Vigi-FR et Open-Meteo.com.</rights>
+  <entry>
+    <id>tag:vigi-fr.vercel.app,2026-11-05:situation</id>
+    <title>Risque incendie de forêt : situation du jeudi 5 novembre 2026</title>
+    <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/#carte"/>
+    <updated>2026-11-04T12:50:17Z</updated>
+    <summary>Sur les 96 départements suivis, 96 au niveau 1 (faible). Le niveau le plus élevé du pays est le niveau 1 (faible). Calcul à midi, heure de Paris, au chef-lieu de chaque département.</summary>
+  </entry>
+  <entry>
+    <id>tag:vigi-fr.vercel.app,2026-11-06:situation</id>
+    <title>Risque incendie de forêt : situation du vendredi 6 novembre 2026</title>
+    <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/#carte"/>
+    <updated>2026-11-04T12:50:17Z</updated>
+    <summary>Sur les 96 départements suivis, 96 au niveau 1 (faible). Le niveau le plus élevé du pays est le niveau 1 (faible). Calcul à midi, heure de Paris, au chef-lieu de chaque département.</summary>
+  </entry>
+  <entry>
+    <id>tag:vigi-fr.vercel.app,2026-11-07:guide-indice-foret-meteo-fwi</id>
+    <title>Indice forêt-météo (FWI ou IFM) : définition, niveaux, limites</title>
+    <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/guide/indice-foret-meteo-fwi/"/>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <summary>Définition de l’indice forêt-météo (FWI, appelé IFM en France) : origine canadienne, six composantes, classes de danger EFFIS et limites d’interprétation.</summary>
+  </entry>
+  <entry>
+    <id>tag:vigi-fr.vercel.app,2026-11-07:guide-comparer-sources-risque-incendie</id>
+    <title>Météo des forêts, Vigi-FR, arrêtés préfectoraux : qui dit quoi ?</title>
+    <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/guide/comparer-sources-risque-incendie/"/>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <summary>Ce que mesurent la Météo des forêts de Météo-France, les niveaux Vigi-FR et les arrêtés préfectoraux, leurs différences et la source qui fait foi.</summary>
+  </entry>
+  <entry>
+    <id>tag:vigi-fr.vercel.app,2026-11-07:guide-debroussaillement-obligatoire</id>
+    <title>Débroussaillement obligatoire : qui, où, quand, quelles sanctions</title>
+    <link rel="alternate" type="text/html" href="https://vigi-fr.vercel.app/guide/debroussaillement-obligatoire/"/>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <summary>Obligations légales de débroussaillement (OLD) : qui est concerné, sur quelle surface, à quelle période, quelles sanctions et comment vérifier sa situation.</summary>
+  </entry>
+</feed>

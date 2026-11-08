@@ -1,0 +1,16 @@
+{
+  "name": "vigi-fr",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vigi-FR : niveau de risque d'incendie de forêt par département (indice forêt-météo).",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "update-data": "node scripts/fetch-data.js",
+    "check": "node --check scripts/fetch-data.js && node --check scripts/indexnow.js && node --check assets/js/lib.js && node --check assets/js/content.js && node --check assets/js/site.js && node --check assets/js/home.js && node --check assets/js/dept.js && node --check tools/generate-pages.mjs && node --check tools/verify-site.mjs",
+    "generate-pages": "node tools/generate-pages.mjs",
+    "verify": "node tools/verify-site.mjs",
+    "indexnow": "node scripts/indexnow.js"
+  }
+}

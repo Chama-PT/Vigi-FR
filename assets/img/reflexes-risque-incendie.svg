@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 452" width="560" height="452" role="img" aria-labelledby="t d" xml:lang="fr">
+  <title id="t">Quatre réflexes quand le risque incendie de forêt est élevé</title>
+  <desc id="d">Pas de feu en forêt ni de barbecue près de la végétation sèche ; aucun mégot jeté dans la nature ; pas de stationnement sur l’herbe sèche ; en cas de départ de feu, appeler le 18 ou le 112 et s’éloigner.</desc>
+  <rect width="560" height="452" rx="22" fill="#0F0D0A"/>
+  <g font-family="Geist, 'Helvetica Neue', Arial, system-ui, sans-serif">
+    <!-- 1. Pas de feu -->
+    <rect x="16" y="16" width="528" height="96" rx="14" fill="#1A1612" stroke="#2E271F"/>
+    <circle cx="68" cy="64" r="34" fill="#0F0D0A" stroke="#F0463A" stroke-width="3"/>
+    <path transform="translate(68 66)" d="M0 -20 C4 -10 14 -4 14 8 C14 17 8 22 0 22 C-8 22 -14 17 -14 8 C-14 0 -8 -6 -5 -12 C-3 -8 -1 -6 0 -20 Z" fill="#E8702A"/>
+    <line x1="46" y1="42" x2="90" y2="86" stroke="#F0463A" stroke-width="5" stroke-linecap="round"/>
+    <text x="122" y="60" font-size="28" font-weight="700" fill="#F7F3EC">Pas de feu en forêt</text>
+    <text x="122" y="90" font-size="20" fill="#C9C1B3">Ni barbecue près de la végétation sèche</text>
+    <!-- 2. Pas de mégot -->
+    <rect x="16" y="124" width="528" height="96" rx="14" fill="#1A1612" stroke="#2E271F"/>
+    <circle cx="68" cy="172" r="34" fill="#0F0D0A" stroke="#F0463A" stroke-width="3"/>
+    <g transform="translate(68 176)">
+      <rect x="-24" y="-3" width="9" height="10" rx="2" fill="#E8702A"/>
+      <rect x="-15" y="-3" width="27" height="10" rx="1" fill="#F7F3EC"/>
+      <rect x="12" y="-3" width="11" height="10" rx="2" fill="#D9B27C"/>
+      <path d="M-20 -8 C-25 -14 -16 -18 -21 -25" fill="none" stroke="#C9C1B3" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <line x1="46" y1="150" x2="90" y2="194" stroke="#F0463A" stroke-width="5" stroke-linecap="round"/>
+    <text x="122" y="168" font-size="28" font-weight="700" fill="#F7F3EC">Aucun mégot jeté</text>
+    <text x="122" y="198" font-size="20" fill="#C9C1B3">Ne jetez jamais de mégot dans la nature</text>
+    <!-- 3. Pas de stationnement sur l'herbe sèche -->
+    <rect x="16" y="232" width="528" height="96" rx="14" fill="#1A1612" stroke="#2E271F"/>
+    <circle cx="68" cy="280" r="34" fill="#0F0D0A" stroke="#F0463A" stroke-width="3"/>
+    <g transform="translate(68 280)">
+      <path d="M-24 9 L-24 -1 L-16 -1 L-11 -11 L11 -11 L16 -1 L24 -1 L24 9 Z" fill="#F7F3EC"/>
+      <circle cx="-13" cy="10" r="5.5" fill="#0F0D0A" stroke="#F7F3EC" stroke-width="2.5"/>
+      <circle cx="13" cy="10" r="5.5" fill="#0F0D0A" stroke="#F7F3EC" stroke-width="2.5"/>
+      <path d="M-26 17 L26 17" stroke="#F0B93A" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+    </g>
+    <line x1="46" y1="258" x2="90" y2="302" stroke="#F0463A" stroke-width="5" stroke-linecap="round"/>
+    <text x="122" y="276" font-size="28" font-weight="700" fill="#F7F3EC">Pas de stationnement</text>
+    <text x="122" y="306" font-size="20" fill="#C9C1B3">Ne vous garez pas sur l’herbe sèche</text>
+    <!-- 4. Départ de feu -->
+    <rect x="16" y="340" width="528" height="96" rx="14" fill="#1A1612" stroke="#E8702A" stroke-opacity="0.55"/>
+    <circle cx="68" cy="388" r="34" fill="#E8702A"/>
+    <text x="68" y="400" font-size="34" font-weight="800" fill="#0F0D0A" text-anchor="middle">18</text>
+    <text x="122" y="384" font-size="28" font-weight="700" fill="#F7F3EC">Départ de feu</text>
+    <text x="122" y="414" font-size="20" fill="#C9C1B3">Appelez le 18 ou le 112, éloignez-vous</text>
+  </g>
+</svg>
