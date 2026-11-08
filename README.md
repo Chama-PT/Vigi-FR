@@ -20,7 +20,6 @@ assets/fonts/                 Instrument Serif, Geist, Geist Mono (licence SIL O
 assets/data/departements.json code, nom, slug, région, préfecture
 data/fwi.json                 données du jour (mises à jour par GitHub Actions)
 scripts/fetch-data.js         récupération Open-Meteo + calcul du FWI
-scripts/indexnow.js           signalement des pages modifiées à IndexNow (Bing et autres)
 .github/workflows/update-data.yml   quotidien, 05:00 UTC : calcul → régénération des pages → contrôle → commit → IndexNow
 vercel.json                   en-têtes de sécurité (CSP), cache, CORS des données, noindex des fichiers techniques (généré)
 .vercelignore                 exclut tools/, scripts/, .github/, seo/ et README.md du déploiement
